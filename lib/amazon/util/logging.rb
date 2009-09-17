@@ -10,12 +10,12 @@ module Logging
   @@AmazonLogger = nil
 
   def set_log( filename )
-    @@AmazonLogger = Logger.new filename
+    #@@AmazonLogger = Logger.new filename
   end
 
   def log( str )
-    set_log 'ruby-aws.log' if @@AmazonLogger.nil?
-    @@AmazonLogger.debug str
+    #set_log 'ruby-aws.log' if @@AmazonLogger.nil?
+    #@@AmazonLogger.debug str
   end
 
 end
